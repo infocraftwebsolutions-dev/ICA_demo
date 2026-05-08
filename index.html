@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="ICA Job Guarantee - India's #1 career institute. 100% job guarantee courses in Accounting, SAP, Data Analytics & Finance. NSDC Certified. 6L+ students placed.">
+<title>ICA Edu Skills — India's #1 Job Guarantee Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@0,800;0,900;1,800;1,900&family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scrollProgress"></div>
+<div id="cursorGlow" aria-hidden="true"></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-logo">ICA<span>Edu Skills</span></div>
+  <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+  <div class="pre-pct" id="prePct">0%</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">ICA<span>Edu</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#usps">Why ICA</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#stats">Impact</a></li>
+    <li><a href="#testimonials">Stories</a></li>
+    <li><a href="#partners">Partners</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <div class="toggle-track">
+        <span class="toggle-icon" id="toggleIcon">🌙</span>
+      </div>
+    </button>
+    <a href="#cta" class="nav-cta">Enroll Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#usps">Why ICA</a>
+  <a href="#courses">Courses</a>
+  <a href="#stats">Impact</a>
+  <a href="#testimonials">Stories</a>
+  <a href="#partners">Partners</a>
+  <a href="#cta" class="mobile-cta">Enroll Now ✨</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="blob hero-blob-one"></div>
+  <div class="blob hero-blob-two"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span>India's No.1 Job Guarantee Institute</span>
+    </div>
+    <h1 class="hero-title">
+      Get Skilled.<br>
+      <span class="gradient-text">Get Hired.</span><br>
+      Get Ahead.
+    </h1>
+    <p class="hero-sub">Master Accounting, SAP, Data Analytics & Finance with India's most trusted career institute. <strong>100% Job Guarantee</strong> with NSDC certification.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+        <span>Explore Courses</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn-ghost" onclick="window.open('https://www.icajobguarantee.com/contact-us','_blank')">
+        Book Free Counseling
+      </button>
+    </div>
+    <div class="hero-features">
+      <div class="hero-feat"><div class="feat-icon">🖥️</div><span>10 Simulation Software</span></div>
+      <div class="hero-feat"><div class="feat-icon">🎯</div><span>100% Job Guarantee</span></div>
+      <div class="hero-feat"><div class="feat-icon">📚</div><span>90% Practical Training</span></div>
+      <div class="hero-feat"><div class="feat-icon">🏅</div><span>NSDC Certified</span></div>
+    </div>
+  </div>
+  <div class="hero-image-wrapper">
+    <div class="orbit orbit-one"><span>Accounting</span></div>
+    <div class="orbit orbit-two"><span>SAP</span></div>
+    <div class="orbit orbit-three"><span>Analytics</span></div>
+    <video src="https://res.cloudinary.com/diw2hermo/video/upload/v1778228457/mp__mbeonb.mp4" autoplay loop muted playsinline class="hero-3d-model video-model"></video>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ==================== WHY ICA ==================== -->
+<section id="usps">
+  <div class="section-header">
+    <div class="section-tag reveal">Why Choose ICA</div>
+    <h2 class="section-title reveal">What Makes ICA <span class="gradient-text">Different</span></h2>
+    <p class="section-sub reveal">We don't just teach — we transform careers with real-world skills, internships, and guaranteed placement.</p>
+  </div>
+  <div class="usp-grid">
+    <div class="usp-card reveal" style="--delay:.1s">
+      <div class="usp-icon-wrap"><div class="usp-icon">🖥️</div></div>
+      <h3>10 Simulation Tools</h3>
+      <p>Practice on replicas of GSTN, Tally, TDS, ESI, JET, ITR portals — systems that look and feel exactly like real ones.</p>
+      <div class="usp-glow"></div>
+    </div>
+    <div class="usp-card reveal" style="--delay:.2s">
+      <div class="usp-icon-wrap"><div class="usp-icon">💼</div></div>
+      <h3>Paid Internship</h3>
+      <p>Internship included in the course — get hands-on experience, industry exposure, and start earning before you complete.</p>
+      <div class="usp-glow"></div>
+    </div>
+    <div class="usp-card reveal" style="--delay:.3s">
+      <div class="usp-icon-wrap"><div class="usp-icon">🎯</div></div>
+      <h3>100% Job Guarantee</h3>
+      <p>30+ placement offices and 70,000+ registered employers across India ensure every student gets placed.</p>
+      <div class="usp-glow"></div>
+    </div>
+    <div class="usp-card reveal" style="--delay:.4s">
+      <div class="usp-icon-wrap"><div class="usp-icon">🃏</div></div>
+      <h3>Any Time Job Card</h3>
+      <p>Lifetime career support. Change jobs in 5 or 10 years — present your ATJ card and we'll help you find your next role.</p>
+      <div class="usp-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== JOURNEY (HOW IT WORKS) ==================== -->
+<section id="journey">
+  <div class="section-header">
+    <div class="section-tag reveal">How It Works</div>
+    <h2 class="section-title reveal">The ICA <span class="gradient-text">Success Journey</span></h2>
+    <p class="section-sub reveal">Your path from a beginner to a highly paid professional in 4 simple steps.</p>
+  </div>
+  <div class="journey-timeline">
+    <div class="journey-step reveal" style="--delay:.1s">
+      <div class="step-number">1</div>
+      <h3>Expert Counseling</h3>
+      <p>Get a free career assessment to choose the right path in Accounts, Finance, or Data.</p>
+    </div>
+    <div class="journey-step reveal" style="--delay:.2s">
+      <div class="step-number">2</div>
+      <h3>Practical Training</h3>
+      <p>Learn on 10+ simulation software (GST, SAP, Tally) mimicking real corporate environments.</p>
+    </div>
+    <div class="journey-step reveal" style="--delay:.3s">
+      <div class="step-number">3</div>
+      <h3>Paid Internship</h3>
+      <p>Gain real-world corporate exposure and start earning even before course completion.</p>
+    </div>
+    <div class="journey-step reveal" style="--delay:.4s">
+      <div class="step-number">4</div>
+      <h3>100% Placement</h3>
+      <p>Guaranteed interviews with our 70,000+ hiring partners until you get your dream job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COURSES ==================== -->
+<section id="courses">
+  <div class="section-header">
+    <div class="section-tag reveal">Our Programs</div>
+    <h2 class="section-title reveal">Industry-Ready <span class="gradient-text">Career Courses</span></h2>
+    <p class="section-sub reveal">Job-oriented programs with hands-on training, simulation software, and guaranteed placement support.</p>
+  </div>
+  <div class="course-grid">
+    <div class="course-card reveal" style="--delay:.1s" data-color="#FFD700">
+      <div class="course-visual">
+        <div class="course-icon-3d">📊</div>
+        <div class="course-particles"></div>
+      </div>
+      <div class="course-body">
+        <div class="course-category">Most Popular</div>
+        <h3>Accounting & Taxation</h3>
+        <p>Master GST, TDS, Income Tax, Tally Prime & business accounting with real simulation tools.</p>
+        <div class="course-meta">
+          <span>📅 12 Months</span>
+          <span>📦 6 Modules</span>
+        </div>
+        <div class="course-tag">Job Guarantee ✓</div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+    <div class="course-card reveal" style="--delay:.2s" data-color="#B22744">
+      <div class="course-visual">
+        <div class="course-icon-3d">💻</div>
+        <div class="course-particles"></div>
+      </div>
+      <div class="course-body">
+        <div class="course-category">Enterprise</div>
+        <h3>SAP & ERP Solutions</h3>
+        <p>Get SAP certified — FICO, MM, SD, PP modules with hands-on enterprise training.</p>
+        <div class="course-meta">
+          <span>📅 3 Months</span>
+          <span>📦 17 Modules</span>
+        </div>
+        <div class="course-tag">Industry Certification ✓</div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+    <div class="course-card reveal" style="--delay:.3s" data-color="#06b6d4">
+      <div class="course-visual">
+        <div class="course-icon-3d">📈</div>
+        <div class="course-particles"></div>
+      </div>
+      <div class="course-body">
+        <div class="course-category">Trending</div>
+        <h3>Data Analytics & AI</h3>
+        <p>Learn Excel, Power BI, SQL, Python, AI & ML with real business datasets and capstone projects.</p>
+        <div class="course-meta">
+          <span>📅 8 Months</span>
+          <span>📦 12 Modules</span>
+        </div>
+        <div class="course-tag">PG Program ✓</div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+    <div class="course-card reveal" style="--delay:.4s" data-color="#f59e0b">
+      <div class="course-visual">
+        <div class="course-icon-3d">🏦</div>
+        <div class="course-particles"></div>
+      </div>
+      <div class="course-body">
+        <div class="course-category">Finance</div>
+        <h3>Financial Markets</h3>
+        <p>Complete understanding of stock markets, investment banking, trading, and wealth management.</p>
+        <div class="course-meta">
+          <span>📅 6 Months</span>
+          <span>📦 10 Modules</span>
+        </div>
+        <div class="course-tag">Diploma Program ✓</div>
+      </div>
+      <div class="card-shine"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CURRICULUM ==================== -->
+<section id="curriculum">
+  <div class="section-header">
+    <div class="section-tag reveal">Deep Dive</div>
+    <h2 class="section-title reveal">Comprehensive <span class="gradient-text">Curriculum</span></h2>
+    <p class="section-sub reveal">What you actually learn inside our NSDC-certified programs.</p>
+  </div>
+  <div class="curriculum-grid">
+    <div class="curr-box reveal" style="--delay:.1s">
+      <h4>Business Accounting</h4>
+      <ul>
+        <li>Advanced Tally Prime</li>
+        <li>Financial Statements</li>
+        <li>Corporate Accounting</li>
+        <li>Banking & Reconciliations</li>
+      </ul>
+    </div>
+    <div class="curr-box reveal" style="--delay:.2s">
+      <h4>Direct & Indirect Tax</h4>
+      <ul>
+        <li>GST Registration & Returns</li>
+        <li>TDS / TCS Filing</li>
+        <li>Income Tax Returns (ITR)</li>
+        <li>E-way Bills & Payroll</li>
+      </ul>
+    </div>
+    <div class="curr-box reveal" style="--delay:.3s">
+      <h4>SAP & ERP</h4>
+      <ul>
+        <li>SAP FICO (Finance & Controlling)</li>
+        <li>SAP MM (Materials Management)</li>
+        <li>SAP SD (Sales & Distribution)</li>
+        <li>Enterprise Workflows</li>
+      </ul>
+    </div>
+    <div class="curr-box reveal" style="--delay:.4s">
+      <h4>Data & Soft Skills</h4>
+      <ul>
+        <li>Advanced Excel & MIS</li>
+        <li>Power BI Dashboards</li>
+        <li>Corporate Communication</li>
+        <li>Mock Interviews & Resume</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section id="stats">
+  <div class="stats-bg-canvas" id="statsBg"></div>
+  <div class="section-header">
+    <div class="section-tag reveal">Our Impact</div>
+    <h2 class="section-title reveal">Numbers That <span class="gradient-text">Define Us</span></h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card reveal" style="--delay:.1s">
+      <div class="stat-ring" style="--ring-color:#FFD700"></div>
+      <div class="stat-number gradient-text" data-target="600000" data-suffix="+">0</div>
+      <div class="stat-label">Students Trained</div>
+      <div class="stat-sub">across India since 1999</div>
+    </div>
+    <div class="stat-card reveal" style="--delay:.2s">
+      <div class="stat-ring" style="--ring-color:#B22744"></div>
+      <div class="stat-number gradient-text" data-target="70000" data-suffix="+">0</div>
+      <div class="stat-label">Hiring Partners</div>
+      <div class="stat-sub">registered employers pan India</div>
+    </div>
+    <div class="stat-card reveal" style="--delay:.3s">
+      <div class="stat-ring" style="--ring-color:#06b6d4"></div>
+      <div class="stat-number gradient-text" data-target="100" data-suffix="+">0</div>
+      <div class="stat-label">Training Centers</div>
+      <div class="stat-sub">in cities across India</div>
+    </div>
+    <div class="stat-card reveal" style="--delay:.4s">
+      <div class="stat-ring" style="--ring-color:#f59e0b"></div>
+      <div class="stat-number gradient-text" data-target="25" data-suffix="+ Yrs">0</div>
+      <div class="stat-label">Industry Legacy</div>
+      <div class="stat-sub">of career transformation</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section id="testimonials">
+  <div class="section-header">
+    <div class="section-tag reveal">Student Success</div>
+    <h2 class="section-title reveal">What Our <span class="gradient-text">Students Say</span></h2>
+    <p class="section-sub reveal">Real stories from ICA alumni who transformed their careers.</p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card reveal" style="--delay:.1s">
+      <div class="testi-quote">"ICA's CIA Accounting Course gave me hands-on training in Tally, GST, and business accounting. The placement support really helped me prepare for real job opportunities."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#FFD700,#B22744)">AM</div>
+        <div class="testi-info">
+          <div class="testi-name">Aniket Kr Mahato</div>
+          <div class="testi-role">Placed at <strong>DM International</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+    <div class="testimonial-card reveal" style="--delay:.15s">
+      <div class="testi-quote">"Joining the CIA Accounting Course was the right decision. ICA provided practical training in accounting software and GST, along with great guidance from experienced trainers."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#B22744,#FFD700)">SM</div>
+        <div class="testi-info">
+          <div class="testi-name">Shreyasi Manna</div>
+          <div class="testi-role">Placed at <strong>HDFC Bank</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+    <div class="testimonial-card reveal" style="--delay:.2s">
+      <div class="testi-quote">"The CIA course gave me practical exposure to Tally, GST, and real accounting tasks. The mock interviews helped me gain confidence for job opportunities."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#06b6d4,#FFD700)">DU</div>
+        <div class="testi-info">
+          <div class="testi-name">Dhananjay Upadhyay</div>
+          <div class="testi-role">Placed at <strong>Republic Hyundai</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+    <div class="testimonial-card reveal" style="--delay:.25s">
+      <div class="testi-quote">"ICA's SAP PP course was a great decision. Real projects and clear lessons helped me master production planning in SAP with ease."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#f59e0b,#B22744)">KD</div>
+        <div class="testi-info">
+          <div class="testi-name">Kshitija Dhibhate</div>
+          <div class="testi-role">Placed at <strong>Atharva Foundries</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+    <div class="testimonial-card reveal" style="--delay:.3s">
+      <div class="testi-quote">"Thanks to ICA's SAP MM training, I now handle materials management confidently. The practical approach truly prepared me for the workplace."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#FFD700,#06b6d4)">SR</div>
+        <div class="testi-info">
+          <div class="testi-name">Sohini Roy Samaddar</div>
+          <div class="testi-role">Placed at <strong>Madhusudan Organics</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+    <div class="testimonial-card reveal" style="--delay:.35s">
+      <div class="testi-quote">"The Advanced Excel course was excellent. I learned powerful formulas, data tools & analytics, boosting my confidence at work."</div>
+      <div class="testi-author">
+        <div class="testi-avatar" style="--av-bg:linear-gradient(135deg,#B22744,#06b6d4)">SG</div>
+        <div class="testi-info">
+          <div class="testi-name">Shivani Ghate</div>
+          <div class="testi-role">Placed at <strong>Metro Global Solutions</strong></div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARTNERS ==================== -->
+<section id="partners">
+  <div class="section-header">
+    <div class="section-tag reveal">Hiring Network</div>
+    <h2 class="section-title reveal">Our <span class="gradient-text">Placement Partners</span></h2>
+    <p class="section-sub reveal">70,000+ companies across India trust ICA graduates.</p>
+  </div>
+  <div class="partners-marquee reveal">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="partner-logo">Capgemini</div>
+      <div class="partner-logo">HDFC Bank</div>
+      <div class="partner-logo">Deloitte</div>
+      <div class="partner-logo">DM International</div>
+      <div class="partner-logo">Republic Hyundai</div>
+      <div class="partner-logo">Wipro</div>
+      <div class="partner-logo">TCS</div>
+      <div class="partner-logo">ICICI Bank</div>
+      <div class="partner-logo">Axis Bank</div>
+      <div class="partner-logo">Kotak Mahindra</div>
+      <div class="partner-logo">Infosys</div>
+      <div class="partner-logo">Grant Thornton</div>
+      <div class="partner-logo">KPMG</div>
+      <div class="partner-logo">EY</div>
+      <div class="partner-logo">PwC</div>
+      <div class="partner-logo">Accenture</div>
+    </div>
+    <div class="marquee-track" aria-hidden="true">
+      <div class="partner-logo">Capgemini</div>
+      <div class="partner-logo">HDFC Bank</div>
+      <div class="partner-logo">Deloitte</div>
+      <div class="partner-logo">DM International</div>
+      <div class="partner-logo">Republic Hyundai</div>
+      <div class="partner-logo">Wipro</div>
+      <div class="partner-logo">TCS</div>
+      <div class="partner-logo">ICICI Bank</div>
+      <div class="partner-logo">Axis Bank</div>
+      <div class="partner-logo">Kotak Mahindra</div>
+      <div class="partner-logo">Infosys</div>
+      <div class="partner-logo">Grant Thornton</div>
+      <div class="partner-logo">KPMG</div>
+      <div class="partner-logo">EY</div>
+      <div class="partner-logo">PwC</div>
+      <div class="partner-logo">Accenture</div>
+    </div>
+    <div class="marquee-fade marquee-fade-l"></div>
+    <div class="marquee-fade marquee-fade-r"></div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section id="cta">
+  <canvas id="ctaCanvas"></canvas>
+  <div class="blob cta-blob-one"></div>
+  <div class="blob cta-blob-two"></div>
+  <div class="cta-content reveal">
+    <h2 class="cta-title">Start Your <span class="gradient-text">Career Journey</span> Today</h2>
+    <p class="cta-sub">Join 6,00,000+ students who transformed their careers with ICA's 100% Job Guarantee programs.</p>
+    <button class="btn-primary btn-large" onclick="window.open('https://www.icajobguarantee.com/courses','_blank')">
+      <span>Explore All Courses</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+    <div class="cta-badges">
+      <div class="cta-badge"><span class="badge-icon">🏆</span> NSDC Certified</div>
+      <div class="cta-badge"><span class="badge-icon">⭐</span> 25+ Years</div>
+      <div class="cta-badge"><span class="badge-icon">🎯</span> 100% Placement</div>
+      <div class="cta-badge"><span class="badge-icon">📍</span> 100+ Centers</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo footer-logo">ICA<span>Edu</span></a>
+      <p>India's foremost training institute partnered with NSDC. Quality & affordable training to make Indian youth employable since 1999.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">🎬</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="https://www.icajobguarantee.com/category/accounting-courses">Accounting Courses</a>
+      <a href="https://www.icajobguarantee.com/category/data-science-courses">Data Analytics</a>
+      <a href="https://www.icajobguarantee.com/category/financial-market-courses">Finance Courses</a>
+      <a href="https://www.icajobguarantee.com/category/skill-development-courses">Skill Development</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="https://www.icajobguarantee.com/about-us">About Us</a>
+      <a href="https://www.icajobguarantee.com/centers">Centers</a>
+      <a href="https://www.icajobguarantee.com/placements">Placements</a>
+      <a href="https://www.icajobguarantee.com/franchise-opportunity">Franchise</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:info@icajobguarantee.com">📧 info@icajobguarantee.com</a>
+      <a href="https://www.icajobguarantee.com/contact-us">📞 Contact Us</a>
+      <a href="https://www.icajobguarantee.com/centers">📍 100+ Centers Pan India</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 ICA Edu Skills Pvt. Ltd. All rights reserved. | Made with ❤️ for India's future workforce.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

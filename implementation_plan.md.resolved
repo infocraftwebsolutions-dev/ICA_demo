@@ -1,0 +1,117 @@
+# ICA Website — Full Redesign: #78081C × #FFFF00 Next-Level Premium Theme
+
+## Overview
+Complete visual overhaul of the ICA Edu Skills website using the exact brand palette of **Crimson Red `#78081C`** and **Electric Yellow `#FFFF00`**. The current CSS already has these tokens partially defined but the design needs to be dramatically elevated with next-level animations, 3D effects, per-section unique fonts, responsive polish, and a truly stunning professional look.
+
+---
+
+## Color System
+
+| Role | Value | Usage |
+|---|---|---|
+| Primary Background | `#78081C` | Page base, deep sections |
+| Accent / Highlight | `#FFFF00` | Text, CTAs, active states |
+| Dark Crimson | `#4A0511` | Cards, depth layers |
+| Bright Crimson | `#9C0C24` | Hover states, gradients |
+| Deep Black-Red | `#1A0008` | Darkest sections |
+| Yellow-Gold | `#FFE500` | Button shadows, warm accents |
+| Off-Yellow | `rgba(255,255,0,0.7)` | Subtitles, body text |
+
+---
+
+## Per-Section Font Plan (from Google Fonts)
+
+| Section | Font | Style |
+|---|---|---|
+| **Navbar / Global** | `Outfit` (900 weight) | Modern, clean |
+| **Hero Title** | `Playfair Display` (900, italic) | Dramatic editorial |
+| **Hero Subtitle / Body** | `DM Sans` (400, 500) | Friendly readable |
+| **Why ICA (USP)** | `Space Grotesk` (700) | Techy geometric |
+| **Journey Steps** | `Raleway` (800) | Bold, progressive |
+| **Courses** | `Poppins` (700, 600) | Friendly modern |
+| **Curriculum** | `IBM Plex Mono` (600) | Technical, precise |
+| **Stats Numbers** | `Bebas Neue` (400) | Big impact display |
+| **Testimonials** | `Lora` (italic, 400) | Warm, humanistic |
+| **Partners** | `Syne` (700) | Bold geometric |
+| **CTA / Footer** | `Inter` (800) | Clean corporate |
+
+---
+
+## New Design Elements
+
+### 🎨 Visual Upgrades
+- **Hero**: Full-viewport crimson-to-black gradient bg with animated grain texture overlay, glowing crimson orbs, electric yellow particle constellation (updated colors)
+- **Section Backgrounds**: Alternating between `#1A0008` (near-black) and `#4A0511` (deep crimson) for depth contrast
+- **Cards**: Deep glassmorphism with crimson-tinted glass `rgba(120,8,28,0.6)` + yellow border glow on hover
+- **Gradient Text**: Electric yellow → bright crimson → electric yellow shimmer
+
+### 🚀 3D & Animation Upgrades
+- **3D Tilt Cards**: All USP, Course, Journey, and Testimonial cards get `perspective(1000px)` 3D tilt on hover via JS
+- **Magnetic Buttons**: `.btn-primary` gets magnetic pull effect (mouse tracking in JS)
+- **Morphing Background Blobs**: Animated CSS `@keyframes` morphing SVG blobs behind Hero and CTA
+- **Stats Ring Animation**: SVG stroke-dasharray animation when stats enter viewport
+- **Scroll-Progress Bar**: Thin yellow line at top tracking scroll depth
+- **Cursor Glow Trail**: Custom cursor with yellow glow halo
+- **Section Entrance**: Staggered slide+fade with GSAP (already exists, enhance timing)
+- **Button 3D Press Effect**: `translateZ` + box-shadow depth shift on `:active`
+
+### 📱 Responsive Polish
+- Fluid type with `clamp()` at every breakpoint
+- Mobile-first stack: all grids collapse properly
+- Touch-friendly button sizes (min 44px tap targets)
+- Mobile menu: full crimson overlay with yellow links
+
+### 🎬 Video
+- Hero video stays (`https://res.cloudinary.com/...`) — properly positioned right-side on desktop, full-width centered below text on mobile
+- `mix-blend-mode: screen` kept for seamless blend
+
+---
+
+## Proposed Changes
+
+### styles.css — FULL REWRITE
+#### [MODIFY] styles.css
+- New root tokens (richer color palette with 8+ variables)
+- 10 Google Fonts imported (Playfair Display, DM Sans, Space Grotesk, Raleway, Poppins, IBM Plex Mono, Bebas Neue, Lora, Syne, Inter, Outfit)
+- Per-section font-family assignments
+- 3D button effects with `transform-style: preserve-3d`
+- Morphing blob animations
+- Scroll progress bar styles
+- Custom cursor styles
+- Enhanced glassmorphism card styles
+- All hover states with yellow glow shadows
+- Full responsive media queries at 1200, 1024, 900, 768, 600, 480px
+
+### index.html — TARGETED ENHANCEMENTS
+#### [MODIFY] index.html
+- Add scroll-progress bar `<div id="scrollProgress">` before navbar
+- Add cursor glow `<div id="cursorGlow">` 
+- Add morphing blobs `<div class="blob">` in Hero and CTA
+- Font link updated to include all 10 families
+
+### app.js — ENHANCEMENTS
+#### [MODIFY] app.js
+- Scroll-progress bar logic
+- Custom cursor glow tracking
+- Magnetic button effect
+- 3D tilt on all cards (USP, Journey, Testimonial, Curriculum)
+- Stats SVG ring animation
+- Particle colors updated to match new palette
+
+---
+
+## Verification Plan
+
+### Browser Preview
+- Open `index.html` in browser via subagent
+- Verify color theme, fonts, animations, responsiveness
+- Test mobile view at 375px width
+- Verify video renders properly
+
+### Visual Checks
+- ✅ All text readable (yellow on dark red = high contrast ✓)
+- ✅ All sections have distinct fonts
+- ✅ Hover/3D effects work on cards
+- ✅ Buttons have 3D press effect
+- ✅ Particles use correct colors
+- ✅ Mobile layout is clean
